@@ -65,13 +65,23 @@ switch (command) {
         doThing();
         break;
 }
-//the concert-this axios function still need to do the moment for the date
+//the concert-this axios function 
 function concertThis(title) {
     // Then run a request with axios to the OMDB API with the movie specified
     var queryUrl = "https://rest.bandsintown.com/artists/" + title + "/events?app_id=codingbootcamp";
-//function to consolelog the axios response 
+    //function to consolelog the axios response 
     axios.get(queryUrl).then(
         function (response) {
+            //turning the response date into a variable
+            var date1 = response.data[0].datetime;
+            var date2 = response.data[1].datetime;
+            var date3 = response.data[2].datetime;
+            //taking that date and changing the format with moment.
+            var mdate1 = moment(date1).format("MM/DD/YYYY");
+            var mdate2 = moment(date2).format("MM/DD/YYYY");
+            var mdate3 = moment(date3).format("MM/DD/YYYY");
+
+
             console.log("-------------------------");
             //log the lineup
             console.log(response.data[0].lineup);
@@ -79,17 +89,17 @@ function concertThis(title) {
             //log the venue name, city and date
             console.log(response.data[0].venue.name);
             console.log(response.data[0].venue.city);
-            console.log(response.data[0].datetime);
+            console.log(mdate1);
             console.log("-------------------------");
             //log the second venue name, city and date
             console.log(response.data[1].venue.name);
             console.log(response.data[1].venue.city);
-            console.log(response.data[1].datetime);
+            console.log(mdate2);
             console.log("-------------------------");
             //log the third venue name, city and date
             console.log(response.data[2].venue.name);
             console.log(response.data[2].venue.city);
-            console.log(response.data[2].datetime);
+            console.log(mdate3);
             console.log("-------------------------");
 
             //append info to log.txt
@@ -105,7 +115,7 @@ function concertThis(title) {
             fs.appendFile("log.txt", response.data[0].venue.city, function (err) {
                 if (err) throw err;
             });
-            fs.appendFile("log.txt", response.data[0].datetime, function (err) {
+            fs.appendFile("log.txt", mdate1, function (err) {
                 if (err) throw err;
             });
             fs.appendFile("log.txt", response.data[1].venue.name, function (err) {
@@ -114,7 +124,7 @@ function concertThis(title) {
             fs.appendFile("log.txt", response.data[1].venue.city, function (err) {
                 if (err) throw err;
             });
-            fs.appendFile("log.txt", response.data[1].datetime, function (err) {
+            fs.appendFile("log.txt", mdate2, function (err) {
                 if (err) throw err;
             });
             fs.appendFile("log.txt", response.data[2].venue.name, function (err) {
@@ -123,7 +133,7 @@ function concertThis(title) {
             fs.appendFile("log.txt", response.data[2].venue.city, function (err) {
                 if (err) throw err;
             });
-            fs.appendFile("log.txt", response.data[2].datetime, function (err) {
+            fs.appendFile("log.txt", mdate3, function (err) {
                 if (err) throw err;
             });
 
@@ -236,7 +246,7 @@ function doThing() {
     //reads random.txt file and runs the spotify-this-song function with the info in random.txt
     fs.readFile('random.txt', "utf8", function (error, data) {
         var txt = data.split(',');
-//call to run spotify-this-song function
+        //call to run spotify-this-song function
         spotifySong(txt[1]);
     });
 }

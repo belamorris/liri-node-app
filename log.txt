@@ -6,3 +6,6 @@ Release Year: 1998Title: The Big LebowskiLanguage: English, German, Hebrew, Span
 TripazoidsIndy CindyClub Justice[object Object]
 Backstreet Boys[object Object]I Want It That WayThe Hits--Chapter One
 Pixies,WeezerKFC Yum! CenterTennessee Theatre2019-03-09T19:00:15Colonial Life ArenaColumbia2019-03-10T19:00:33LouisvilleKnoxville2019-03-08T19:00:59
+Pixies,WeezerTennessee TheatreKnoxvilleColonial Life ArenaColumbia2019-03-10T19:00:332019-03-09T19:00:152019-03-08T19:00:59LouisvilleKFC Yum! Center
+Pixies,WeezerKFC Yum! CenterLouisville2019-03-09T19:00:15Colonial Life ArenaColumbia2019-03-10T19:00:33Tennessee TheatreKnoxville2019-03-08T19:00:59
+Pixies,WeezerKnoxvilleKFC Yum! Center03/09/2019Colonial Life Arena03/10/2019ColumbiaTennessee Theatre03/08/2019Louisville
