@@ -10,5 +10,5 @@ At command prompt run node liri.js <pass in an instruction from above>
 
 Screenshot of the concert-this command
 
-![alt text] (images/Screen Shot 2019-02-06 at 7.31.34 PM.png)
+![] (images/concertthis.png)
 
