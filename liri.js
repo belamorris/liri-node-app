@@ -72,16 +72,6 @@ function concertThis(title) {
     //function to consolelog the axios response 
     axios.get(queryUrl).then(
         function (response) {
-            //turning the response date into a variable
-            var date1 = response.data[0].datetime;
-            var date2 = response.data[1].datetime;
-            var date3 = response.data[2].datetime;
-            //taking that date and changing the format with moment.
-            var mdate1 = moment(date1).format("MM/DD/YYYY");
-            var mdate2 = moment(date2).format("MM/DD/YYYY");
-            var mdate3 = moment(date3).format("MM/DD/YYYY");
-
-
             console.log("-------------------------");
             //log the lineup
             console.log(response.data[0].lineup);
@@ -89,17 +79,17 @@ function concertThis(title) {
             //log the venue name, city and date
             console.log(response.data[0].venue.name);
             console.log(response.data[0].venue.city);
-            console.log(mdate1);
+            console.log(moment(response.data[0].datetime).format("MM/DD/YYYY"));
             console.log("-------------------------");
             //log the second venue name, city and date
             console.log(response.data[1].venue.name);
             console.log(response.data[1].venue.city);
-            console.log(mdate2);
+            console.log(moment(response.data[1].datetime).format("MM/DD/YYYY"));
             console.log("-------------------------");
             //log the third venue name, city and date
             console.log(response.data[2].venue.name);
             console.log(response.data[2].venue.city);
-            console.log(mdate3);
+            console.log(moment(response.data[2].datetime).format("MM/DD/YYYY"));
             console.log("-------------------------");
 
             //append info to log.txt
@@ -115,7 +105,7 @@ function concertThis(title) {
             fs.appendFile("log.txt", response.data[0].venue.city, function (err) {
                 if (err) throw err;
             });
-            fs.appendFile("log.txt", mdate1, function (err) {
+            fs.appendFile("log.txt", moment(response.data[0].datetime).format("MM/DD/YYYY"), function (err) {
                 if (err) throw err;
             });
             fs.appendFile("log.txt", response.data[1].venue.name, function (err) {
@@ -124,7 +114,7 @@ function concertThis(title) {
             fs.appendFile("log.txt", response.data[1].venue.city, function (err) {
                 if (err) throw err;
             });
-            fs.appendFile("log.txt", mdate2, function (err) {
+            fs.appendFile("log.txt", moment(response.data[0].datetime).format("MM/DD/YYYY"), function (err) {
                 if (err) throw err;
             });
             fs.appendFile("log.txt", response.data[2].venue.name, function (err) {
@@ -133,7 +123,7 @@ function concertThis(title) {
             fs.appendFile("log.txt", response.data[2].venue.city, function (err) {
                 if (err) throw err;
             });
-            fs.appendFile("log.txt", mdate3, function (err) {
+            fs.appendFile("log.txt", moment(response.data[0].datetime).format("MM/DD/YYYY"), function (err) {
                 if (err) throw err;
             });
 

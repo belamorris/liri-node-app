@@ -1,11 +1,5 @@
-I Saw the Sign (Karaoke Playback with Lead Vocals) [Made Famous by Ace of Base]
-Karaoke Box[object Object]Karaoke Box: Reggae Greatest HitsI Saw the Sign (Karaoke Playback with Lead Vocals) [Made Famous by Ace of Base][object Object]Karaoke Box
-Karaoke Box: Reggae Greatest Hits
-Pixies,WeezerTennessee TheatreKnoxville2019-03-09T19:00:15Colonial Life ArenaColumbia2019-03-10T19:00:33KFC Yum! CenterLouisville2019-03-08T19:00:59
-Release Year: 1998Title: The Big LebowskiLanguage: English, German, Hebrew, SpanishPlot: Jeff "The Dude" Lebowski, mistaken for a millionaire of the same name, seeks restitution for his ruined rug and enlists his bowling buddies to help get it.Actors: Jeff Bridges, John Goodman, Julianne Moore, Steve BuscemiRotten Tomatoes Rating: undefinedIMdB Rating: 8.1Country: USA, UK
-TripazoidsIndy CindyClub Justice[object Object]
-Backstreet Boys[object Object]I Want It That WayThe Hits--Chapter One
-Pixies,WeezerKFC Yum! CenterTennessee Theatre2019-03-09T19:00:15Colonial Life ArenaColumbia2019-03-10T19:00:33LouisvilleKnoxville2019-03-08T19:00:59
-Pixies,WeezerTennessee TheatreKnoxvilleColonial Life ArenaColumbia2019-03-10T19:00:332019-03-09T19:00:152019-03-08T19:00:59LouisvilleKFC Yum! Center
-Pixies,WeezerKFC Yum! CenterLouisville2019-03-09T19:00:15Colonial Life ArenaColumbia2019-03-10T19:00:33Tennessee TheatreKnoxville2019-03-08T19:00:59
-Pixies,WeezerKnoxvilleKFC Yum! Center03/09/2019Colonial Life Arena03/10/2019ColumbiaTennessee Theatre03/08/2019Louisville
+Pixies,WeezerLouisville
+KFC Yum! CenterTennessee Theatre03/08/2019Knoxville03/08/2019ColumbiaColonial Life Arena03/08/2019
+Indy Cindy[object Object]TripazoidsClub Justice
+Release Year: 1998IMdB Rating: 8.1Actors: Jeff Bridges, John Goodman, Julianne Moore, Steve BuscemiPlot: Jeff "The Dude" Lebowski, mistaken for a millionaire of the same name, seeks restitution for his ruined rug and enlists his bowling buddies to help get it.Country: USA, UKRotten Tomatoes Rating: undefinedTitle: The Big LebowskiLanguage: English, German, Hebrew, Spanish
+The Hits--Chapter OneBackstreet Boys[object Object]I Want It That Way
